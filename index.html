@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPA with External HTML</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#home" onclick="navigate('home')" id="nav-home">Home</a>
+      <a href="#menu" onclick="navigate('menu')" id="nav-menu">Menu</a>
+      <a href="#blog" onclick="navigate('blog')" id="nav-blog">Blog</a>
+      <a href="#page" onclick="navigate('page')" id="nav-page">Page</a>
+      <a href="#contact" onclick="navigate('contact')" id="nav-contact">Contact</a>
+    </nav>
+  </header>
+
+  <div id="content">
+    <!-- Nội dung sẽ được load ở đây -->
+  </div>
+
+  <footer>
+    <nav>
+      <a href="#home" onclick="navigate('home')">Home</a>
+      <a href="#about" onclick="navigate('about')">About Us</a>
+      <a href="#service" onclick="navigate('service')">Service</a>
+      <a href="#booking" onclick="navigate('booking')">Booking</a>
+    </nav>
+  </footer>
+
+  <script>
+    function navigate(page) {
+      const contentDiv = document.getElementById('content');
+
+      fetch(`/${page}/${page}.html`)
+        .then(response => response.text())
+        .then(data => {
+          contentDiv.innerHTML = data;
+          window.history.pushState({ page }, "", `#${page}`);
+          updateHeaderActive(page);
+        })
+        .catch(error => {
+          contentDiv.innerHTML = "<p>Page not found.</p>";
+        });
+    }
+
+    function updateHeaderActive(page) {
+      const headerLinks = document.querySelectorAll('header a');
+      headerLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      const activeHeaderLink = document.getElementById(`nav-${page}`);
+      if (activeHeaderLink) {
+        activeHeaderLink.classList.add('active');
+      }
+    }
+
+    window.addEventListener("load", () => {
+      const hash = window.location.hash.replace('#', '') || 'home';
+      navigate(hash);
+    });
+
+    window.addEventListener("popstate", () => {
+      const page = window.location.hash.replace('#', '') || 'home';
+      navigate(page);
+    });
+  </script>
+
+</body>
+</html>
