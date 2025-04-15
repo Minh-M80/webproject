@@ -31,44 +31,7 @@
     </nav>
   </footer>
 
-  <script>
-    function navigate(page) {
-      const contentDiv = document.getElementById('content');
 
-      fetch(`/${page}/${page}.html`)
-        .then(response => response.text())
-        .then(data => {
-          contentDiv.innerHTML = data;
-          window.history.pushState({ page }, "", `#${page}`);
-          updateHeaderActive(page);
-        })
-        .catch(error => {
-          contentDiv.innerHTML = "<p>Page not found.</p>";
-        });
-    }
-
-    function updateHeaderActive(page) {
-      const headerLinks = document.querySelectorAll('header a');
-      headerLinks.forEach(link => {
-        link.classList.remove('active');
-      });
-
-      const activeHeaderLink = document.getElementById(`nav-${page}`);
-      if (activeHeaderLink) {
-        activeHeaderLink.classList.add('active');
-      }
-    }
-
-    window.addEventListener("load", () => {
-      const hash = window.location.hash.replace('#', '') || 'home';
-      navigate(hash);
-    });
-
-    window.addEventListener("popstate", () => {
-      const page = window.location.hash.replace('#', '') || 'home';
-      navigate(page);
-    });
-  </script>
-
+ <script src="main.js"></script>
 </body>
 </html>
