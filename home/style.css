@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
+:root {
+  --orange-color: #fb8f2c;
+  --white-color: #ffffff;
+  --rgba-color: rgba(255, 255, 255, 1);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111114;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.introduce {
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 2%;
+}
+.introduce .introduce-menu {
+  color: var(--orange-color);
+  margin-top: 35px;
+  border-bottom: 2px solid var(--orange-color);
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.introduce-text {
+  flex-shrink: 1;
+  min-width: 300px;
+}
+
+.introduce-image {
+  flex-shrink: 1;
+
+  min-width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.introduce .introduce-text h1 {
+  color: var(--rgba-color);
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.introduce .introduce-text h5 {
+  opacity: 0.8; /* trắng mờ */
+}
+.introduce .introduce-text .evidence {
+  opacity: 0.8; /* trắng mờ */
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .introduce {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 20px;
+  }
+  .introduce .introduce-menu {
+    margin-top: 20px;
+  }
+  .introduce .introduce-text h1 {
+    font-size: 36px; /* giảm kích thước chữ */
+  }
+  .introduce .introduce-text h5 {
+    font-size: 16px; /* giảm kích thước chữ */
+  }
+  .introduce .introduce-text .evidence {
+    font-size: 14px; /* giảm kích thước chữ */
+  }
+}
+
+.restaurant {
+  margin-top: 20px;
+  background-image: url("./assets/introduceaboutrestaurant.svg");
+  backdrop-filter: blur(5px);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  width: 100%;
+  height: 194px;
+  top: 643px;
+  color: var(--rgba-color);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.restaurant .restaurant-number {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.restaurant .restaurant-number h2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+}
+.restaurant .restaurant-number h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+@media (max-width: 1024px) {
+  .introduce .introduce-text h1 {
+    font-size: 48px;
+  }
+
+  .restaurant .restaurant-number h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .restaurant .restaurant-number h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .restaurant {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .restaurant .restaurant-number {
+    display: flex;
+    text-align: center;
+  }
+  .restaurant .restaurant-number h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .restaurant .restaurant-number h1 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+/* Most popular food */
+.most-popular-food {
+  color: var(--rgba-color);
+  width: 80%;
+  margin: 0 auto;
+}
+.most-popular-food .most-popular-food-text {
+  text-align: center;
+}
+.most-popular-food .most-popular-food-text h2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+}
+.most-popular-food .most-popular-food-text h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  opacity: 0.6;
+}
+.most-popular-food-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.item-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.most-popular-food-items .items {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+.most-popular-food-items .item-name {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+.most-popular-food-items .item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.most-popular-food-items .item-order {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.most-popular-food-items .star {
+  color: var(--orange-color);
+  font-size: 22px;
+}
+.most-popular-food-items .star .except {
+  color: var(--white-color);
+}
+
+.item-order .order {
+  font-size: 18px;
+  border-bottom: 2px solid var(--orange-color);
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .most-popular-food .most-popular-food-text h2 {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 74px;
+}
+.most-popular-food .most-popular-food-text h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 0.6;
+}
+.most-popular-food-items .item-name {
+
+  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.most-popular-food-items .item-text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  opacity: 0.7;
+  
+}
+    
+}
+@media (max-width: 970px) {
+  .most-popular-food-items {
+    flex-direction: column;
+    align-items: center; /* căn giữa các items */
+  }
+
+  .most-popular-food-items .items {
+    width: 80%; /* hoặc 100% nếu bạn muốn full */
+    max-width: 80%;
+    flex: none; /* bỏ flex-grow/shrink/basis cũ */
+  }
+
+  .item-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .br{
+    display: none;
+  }
+}
+
+
+
