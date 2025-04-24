@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #111114;
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-family: "Plus Jakarta Sans", sans-serif ;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -280,4 +280,167 @@ body {
 }
 
 
+.explore-all-food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
 
+.right img{
+   width: 22px;
+   margin-left: 10px;
+}
+.explore-all-food-text{
+  border-bottom: 2px solid var(--orange-color);
+  padding-bottom: 5px;
+}
+
+
+
+
+/* Time  */
+/* .time{
+  color:var(--white-color);
+  width: 100%;
+  height: auto;
+}
+.time .time-items{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+ 
+}
+.time .time-items .items{
+ width: 50%;
+ height: auto;
+}
+.time .items .find-us{
+  align-items: center;
+
+} */
+.time {
+  color: var(--white-color);
+  width: 100%;
+  padding: 60px 0;
+}
+
+.time-items {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  /* flex-wrap: wrap; */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.time .item {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.find-us{
+  margin: auto;
+  
+  text-align: center;
+}
+
+/* Background ảnh bên trái */
+.time .item:first-child {
+  background: url('../home/assets/Avenue.svg') ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+/* Màu nền cam bên phải */
+.time .orange-bg {
+  background-color: #f57c00;
+  color: #111;
+}
+
+/* Title căn giữa */
+.time .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Các dòng giờ mở cửa */
+.schedule .day-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .time-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .time .item {
+    width: 80%;
+    padding: 20px;
+  }
+  .time .item:first-child {
+    background-size: cover;
+    height: 200px; /* Thay đổi chiều cao cho ảnh bên trái */
+  }
+  .time .orange-bg {
+    padding: 20px; /* Thay đổi padding cho màu nền cam bên phải */
+  }
+  
+}
+
+
+
+/* Our Daily Offers */
+.our-daily{
+  color: var(--white-color);
+  width: 100%;
+}
+
+.our-daily .our-daily-items{
+  width: 80%;
+  margin: 0 auto;
+  
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.our-daily-text{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.our-daily-offers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.our-daily-offers .item1{
+  position: relative;
+}
+.our-daily-offers .item1-text{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.item1-text-inner{
+  border:1px solid var(--white-color);
+  padding: 10px 90px 10px 0px;
+}
+.our-daily-offers .item2{
+  width: 50%;
+  height: 100%;
+}
