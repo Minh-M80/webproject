@@ -8,17 +8,47 @@
 </head>
 <body>
 
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <label for="menu-toggle" class="overlay"></label>
+
   <header>
-    <nav>
-      <a href="#home" onclick="navigate('home')" id="nav-home">Home</a>
-      <a href="#menu" onclick="navigate('menu')" id="nav-menu">Menu</a>
-      <a href="#blog" onclick="navigate('blog')" id="nav-blog">Blog</a>
-      <a href="#page" onclick="navigate('page')" id="nav-page">Page</a>
-      <a href="#contact" onclick="navigate('contact')" id="nav-contact">Contact</a>
+    <nav class="menu">
+      <!-- Sidebar menu -->
+      <div class="sidebar" >
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        <div class="menu-items">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#blog">Blog</a>
+          <a href="#page">Pages</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <!-- Main header layout -->
+      <div class="menu-left">
+        <div class="menu-items desktop-only">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#blog">Blog</a>
+          <a href="#page">Pages</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="logo">
+        <img src="assetsmain/logo.svg" alt="Logo" />
+      </div>
+
+      <div class="info">
+        <div class="info-first">11:24 we're open</div>
+        <div class="info-second">Table Reservation</div>
+      </div>
     </nav>
   </header>
 
-  <div id="content">
+  <div id="content" style="width: 100%;">
     <!-- Nội dung sẽ được load ở đây -->
   </div>
 
@@ -31,7 +61,6 @@
     </nav>
   </footer>
 
-
- <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
