@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 :root {
   --orange-color: #fb8f2c;
   --white-color: #ffffff;
@@ -15,6 +15,7 @@ body {
 }
 
 .introduce {
+  font-family: "Libre Bodoni", serif;
   color: var(--white-color);
   display: flex;
   justify-content: center;
@@ -445,4 +446,52 @@ body {
 .our-daily-offers .item2{
   width: 50%;
   height: 100%;
+}
+
+
+
+ /* Our menu  */
+
+.our-menu{
+  color: var(--white-color);
+  width: 100%;
+  padding: 60px 0;
+}
+
+.our-menu .our-menu-items{
+  width: 80%;
+  margin: 0 auto;
+}
+.our-menu-items .our-menu-item .title,.main-title,.menu-intro{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.our-menu-items .our-menu-item .title{
+  font-size: 15px;
+  font-weight: 500;
+}
+.our-menu-items .our-menu-item .main-title{
+  font-size: 38px;
+  font-weight: 500;
+ 
+}
+.our-menu-items .our-menu-item .menu-intro{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.6;
+  margin-bottom: 50px;
+}
+.our-menu-item .menu-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.our-menu-item .menu-list .active{
+border-bottom: 2px solid var(--orange-color);
+  color: var(--orange-color);
 }
