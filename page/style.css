@@ -1,0 +1,74 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .subscribe-form {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding: 10px;
+  }
+  
+  .subscribe-form input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 70%;
+  }
+  
+  .subscribe-form button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .countdown div {
+    text-align: center;
+  }
+  
+  .countdown span {
+    font-size: 40px;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .go-home {
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+  }
