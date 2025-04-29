@@ -292,13 +292,71 @@
     }
     .pagination{
         width: 339px;
-        height: 62px;
-        display: inline-block;
+        height: 30px;
+    }
+    .pagination--number{
+        height: 30px;
+        width: 120px;
+        padding: 0px 0px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .pagination--number--more{
         display: inline;
     }
     .pagination--number--sub{
         display: none;
+    }
+    .newsletter{
+        display: block;
+        width: 375px;
+        height: 752px;
+        margin-left: 36px;
+    }
+    .newsletter--email{
+        width: 339px;
+        height: 278px;
+        position: absolute;
+        margin-left: 0px;
+    }
+    .newsletter--email--name{
+        width: 339px;
+        height: 88px;
+        font-size: 34px;
+    }
+    .newsletter--email--info{
+        height: 72px;
+        width: 339px;
+        font-size: 14px;
+    }
+    .newsletter--email--input{
+        width: 339px;
+        height: 54px;
+    }
+    .newsletter--email--input .email{
+        width: 280px;
+        height: 54px;
+        font-size: 18px;
+    }
+    .newsletter--email--input .a{
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    .newsletter--img{
+        position: absolute;
+        margin-top: 370px;
+        height: 379px;
+        width: 3390px;
+    }
+    .newsletter--img .img1{
+        width: 68px;
+        height: 68px;
+    }
+    .newsletter--img .img2{
+        height: 345px;
+        width: 306px;
+        margin-left: 34px;
+        margin-top: 34px;
     }
 }
