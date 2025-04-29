@@ -8,7 +8,7 @@ function navigate(page) {
 
       // 🔥 Load CSS tương ứng
       loadCSS(`${page}/style.css`);
-
+      loadJS(`${page}/main.js`);
       window.history.pushState({ page }, "", `#${page}`);
       updateActiveLink(page);
     })
@@ -60,5 +60,18 @@ function navigate(page) {
     link.setAttribute("data-spa-css", "true"); // đánh dấu để dễ xóa sau
     document.head.appendChild(link);
   }
+  function loadJS(path) {
+    // Xóa script cũ (nếu có) dựa vào thuộc tính tùy chỉnh
+    const oldScripts = document.querySelectorAll('script[data-spa-js]');
+    oldScripts.forEach(script => script.remove());
+  
+    // Tạo thẻ script mới
+    const script = document.createElement('script');
+    script.src = path;
+    script.setAttribute('data-spa-js', 'true'); // đánh dấu để dễ xóa
+    script.defer = true; // Tùy chọn: đảm bảo script chạy sau khi DOM load
+    document.body.appendChild(script);
+  }
+  
   
   
