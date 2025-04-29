@@ -525,6 +525,9 @@ border-bottom: 2px solid var(--orange-color);
   
 }
 @media screen and (max-width: 760px) {
+  .our-menu{
+    margin-bottom: 20px;
+  }
   .our-menu-item .menu-list{
     gap:15px;
     font-size: 18px;
@@ -553,6 +556,174 @@ border-bottom: 2px solid var(--orange-color);
   }
   
 }
+
+
+
+
+
+
+/* Visit restaurant  */
+.visit-restaurant{
+  color: var(--white-color);
+  width: 100%;
+  margin-top: 80px;
+  
+}
+.visit-restaurant .visit-restaurant-items{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.visit-restaurant .visit-restaurant-items .title,.visit-restaurant .visit-restaurant-items .intro{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.img-restaurant {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 1fr = 1 phần của không gian còn lại sau khi đã trừ các khoảng cách (gap, padding, border, v.v.) */
+  /* ví dụ parent 900px con /3 là 300 */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+  
+.img-restaurant_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-restaurant .item2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.img-restaurant .item3 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.img-restaurant .item4 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.img-restaurant .item5 {
+  grid-column-start: 3;
+}
+.visit-restaurant .dot{
+  display: none;
+}
+
+
+@media screen and (max-width:780px){
+  .visit-restaurant{
+   margin-top: 80px;
+   padding-top: 20px;
+  }
+  .visit-restaurant .intro br{
+    display: none;
+    margin-bottom: 20px;
+  }
+  .visit-restaurant-items{
+    width:90%;
+    margin: auto;
+  }
+  .img-restaurant {
+    gap:12px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .img-restaurant{
+    grid-template-columns:1fr ;
+    grid-template-rows: 1fr;
+  }
+.img-restaurant .img-restaurant_item{
+  display: none;
+}
+.img-restaurant  .item1{
+  display: block;
+  
+}
+.img-restaurant  .item1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.visit-restaurant .dot{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.visit-restaurant .dot .item-dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 0.6;
+}
+.visit-restaurant .dot .dot1{
+  width:18px;
+  border-radius: 4px;
+  opacity: 1;
+}
+}
+
+
+
+
+/* <!-- Reserve ! Book Now  --> */
+.reserve-book{
+  width: 100%;
+  margin-top: 80px;
+  color: var(--white-color);
+}
+.reserve-book .reserve-book-items{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.reserve-book .reserve-book-items .reserve-book-text{
+  background-color: var(--orange-color);
+  width: 50%;
+  height: 100%;
+}
+.reserve-book .reserve-book-items .reserve-book-image{
+  width: 50%;
+  height: 100%;
+}
+
+.reserve-book .reserve-book-items .reserve-book-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
