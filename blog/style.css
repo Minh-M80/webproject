@@ -311,13 +311,12 @@
         display: block;
         width: 375px;
         height: 752px;
-        margin-left: 36px;
     }
     .newsletter--email{
         width: 339px;
         height: 278px;
         position: absolute;
-        margin-left: 0px;
+        margin-left: 15px;
     }
     .newsletter--email--name{
         width: 339px;
