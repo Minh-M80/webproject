@@ -1,74 +1,109 @@
-.hero {
+.page {
+    background: url('../page/assets/Rectangle 27.svg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
   
-  .hero-content {
+.page-content {
     max-width: 600px;
-  }
+    height: 100%;
+}
   
-  .hero h1 {
+.page h1 {
     color: white;
     font-size: 40px;
     font-weight: bold;
-  }
+    margin-top: 10%;
+}
   
-  .hero p {
+.page p {
     margin: 20px 0;
     font-size: 14px;
     color: #ccc;
-  }
+}
   
-  .subscribe-form {
+.subscribe-form {
     margin: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid white;
     padding: 10px;
-  }
+    margin-bottom: 15%;
+}
   
-  .subscribe-form input {
+.subscribe-form input {
     background: transparent;
     border: none;
     outline: none;
     color: white;
     font-size: 16px;
-    width: 70%;
-  }
+    width: 100%;
+}
   
-  .subscribe-form button {
+.subscribe-form button {
     background: none;
     border: none;
     color: white;
     font-size: 20px;
     cursor: pointer;
-  }
+}
   
-  .countdown {
+.countdown {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     margin: 20px 0;
-  }
+}
   
-  .countdown div {
+.countdown div {
     text-align: center;
-  }
+}
   
-  .countdown span {
+.countdown span {
     font-size: 40px;
     color: orange;
     font-weight: bold;
-  }
+    font-style: italic;
+}
   
-  .go-home {
+.go-home {
     margin-top: 20px;
     display: inline-block;
     color: white;
-    text-decoration: underline;
-    font-size: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 2px solid orange;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+    color: orange;
+    font-size: 2rem;
+    text-align: center;
+}
+  
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+@media (min-width: 768px) {
+  .subscribe-form input {
+    width: 70%;
   }
+
+  .countdown {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    font-size: 2.5rem;
+  }
+}

@@ -19,5 +19,3 @@ const countdownFunction = setInterval(() => {
     document.querySelector(".countdown").innerHTML = "<h2>Time's up!</h2>";
   }
 }, 1000);                        
-
-console.log("Hello");
