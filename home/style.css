@@ -87,7 +87,7 @@ body {
 
 .restaurant {
   margin-top: 20px;
-  background-image: url("./assets/introduceaboutrestaurant.svg");
+  background-image: url("assets/introduceaboutrestaurant.svg");
   /* background-image: url("home/assets/introduceaboutrestaurant.svg"); */
   backdrop-filter: blur(5px);
 
@@ -102,7 +102,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  flex-wrap: wrap;
+
 }
 .restaurant .restaurant-number {
   display: flex;
@@ -1067,12 +1067,13 @@ padding: 0 !important;
   gap: 20px;
 }
 .cook-for-you .cook-inner .item2 .intro{
-  width:calc(100/3 -20/3);
+  width:calc(100/3 -20/2);
 }
 .cook-for-you .cook-inner .item2 .intro img{
   width: 100%;
   height: auto;
   object-fit: cover;
+  border:1px solid rgba(255, 255, 255, 0.5);
 }
 .cook-for-you .cook-inner .item2{
   text-align: center;
@@ -1092,4 +1093,77 @@ padding: 0 !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+}
+
+
+
+
+
+
+
+/* Our Blog  */
+
+.our-blog{
+  color:var(--white-color);
+  width: 100%;
+  font-family: "Libre Bodoni", serif !important;
+}
+.our-blog .our-blog-content{
+  width: 80%;
+  margin: 0 auto;
+}
+.our-blog .our-blog-content .our-blog-title{
+    text-align: center;
+}
+.our-blog-main{
+width: 100%;
+}
+.our-blog-main .item{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:30px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.our-blog-main .item .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+  .our-blog-main .item{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NewsLetter  */
+
+.newsletter{
+  width: 100%;
+  margin-top: 20px;
+  background-image: url("assets/introduceaboutrestaurant.svg");
+  /* background-image: url("home/assets/introduceaboutrestaurant.svg"); */
+  backdrop-filter: blur(5px);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* max-width: 1440px; */
+  width: 100%;
+  height: 194px;
+  top: 643px;
+  color: var(--rgba-color);
+  
 }
