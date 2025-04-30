@@ -188,7 +188,7 @@ font-family: "Libre Bodoni", serif !important;
 /* Footer  */
 footer{
   width: 100%;
-  color: var(--white-color);
+  color:white;
 }
 footer .footer-main{
     width: 80%;
