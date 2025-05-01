@@ -175,3 +175,28 @@ header {
   box-shadow: 0 6px 14px rgba(251, 143, 44, 0.4);
   transform: translateY(-2px);
 }
+
+.menu-left a{
+font-family: "Libre Bodoni", serif !important;
+}
+.sidebar a{
+  font-family: "Libre Bodoni", serif !important;
+}
+
+
+
+/* Footer  */
+footer{
+  width: 100%;
+  color:white;
+}
+footer .footer-main{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+footer .footer-main .main-item a{
+  display: block;
+}
