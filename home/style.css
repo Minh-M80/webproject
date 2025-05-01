@@ -17,15 +17,18 @@ body {
 .introduce {
   font-family: "Libre Bodoni", serif;
   color: var(--white-color);
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   gap: 20px;
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
-  max-width: 1440px;
-  padding-left: 4%;
+  /* max-width: 1440px; */
+  /* padding-left: 4%; */
+margin: 0 auto;
 }
 
 .introduce .introduce-menu {
@@ -41,6 +44,7 @@ body {
 .introduce-text {
   flex-shrink: 1;
   min-width: 300px;
+  margin-left: 24%;
 }
 
 .introduce-image {
@@ -66,7 +70,8 @@ body {
 }
 @media (max-width: 768px) {
   .introduce {
-    flex-direction: column;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
     align-items: center;
     margin-left: 0;
     padding: 20px;
