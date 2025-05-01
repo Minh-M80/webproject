@@ -17,18 +17,18 @@ body {
 .introduce {
   font-family: "Libre Bodoni", serif;
   color: var(--white-color);
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; */
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
   gap: 20px;
-  /* padding: 40px; */
+  padding: 40px;
   width: 100%;
   /* max-width: 1440px; */
-  /* padding-left: 4%; */
-margin: 0 auto;
+  padding-left: 4%;
+/* margin: 0 auto; */
 }
 
 .introduce .introduce-menu {
@@ -42,13 +42,14 @@ margin: 0 auto;
   line-height: 26px;
 }
 .introduce-text {
-  /* flex-shrink: 1; */
+  flex-shrink: 1;
   min-width: 300px;
-  margin-left: 24%;
+ 
+  
 }
 
 .introduce-image {
-  /* flex-shrink: 1; */
+  flex-shrink: 1;
 
   min-width: 280px;
   max-width: 100%;
@@ -75,20 +76,20 @@ margin: 0 auto;
 }
 @media (max-width: 768px) {
   .introduce {
-    /* flex-direction: column; */
+    flex-direction: column;
     grid-template-columns: 1fr;
-    /* align-items: center; */
+    align-items: center;
     margin-left: 0;
-    /* padding: 20px; */
+    padding: 20px;
   }
   .introduce .introduce-menu {
     margin-top: 20px;
     
   }
   /* thêm của grid  */
-  .introduce .introduce-text{
+  /* .introduce .introduce-text{
     margin:0 auto
-  }
+  } */
   .introduce .introduce-text h1 {
     font-size: 36px; /* giảm kích thước chữ */
   }
