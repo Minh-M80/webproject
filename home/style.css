@@ -42,19 +42,24 @@ margin: 0 auto;
   line-height: 26px;
 }
 .introduce-text {
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
   min-width: 300px;
   margin-left: 24%;
 }
 
 .introduce-image {
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
 
   min-width: 280px;
   max-width: 100%;
   box-sizing: border-box;
 }
-
+.introduce-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
 .introduce .introduce-text h1 {
   color: var(--rgba-color);
   font-weight: 500;
@@ -72,12 +77,17 @@ margin: 0 auto;
   .introduce {
     /* flex-direction: column; */
     grid-template-columns: 1fr;
-    align-items: center;
+    /* align-items: center; */
     margin-left: 0;
-    padding: 20px;
+    /* padding: 20px; */
   }
   .introduce .introduce-menu {
     margin-top: 20px;
+    
+  }
+  /* thêm của grid  */
+  .introduce .introduce-text{
+    margin:0 auto
   }
   .introduce .introduce-text h1 {
     font-size: 36px; /* giảm kích thước chữ */
