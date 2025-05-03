@@ -24,11 +24,16 @@ function navigate(page) {
       link.classList.remove('active');
     });
 
-    const headerLink = document.getElementById(`nav-${page}`);
-    const footerLink = document.getElementById(`footer-${page}`);
+    // const headerLink = document.getElementById(`nav-${page}`);
+    // const footerLink = document.getElementById(`footer-${page}`);
 
-    if (headerLink) headerLink.classList.add('active');
-    if (footerLink) footerLink.classList.add('active');
+    // if (headerLink) headerLink.classList.add('active');
+    // if (footerLink) footerLink.classList.add('active');
+    const ids = [`nav-${page}`, `nav-${page}-desktop`, `footer-${page}`];
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('active');
+  });
   }
 
   window.addEventListener("load", () => {
