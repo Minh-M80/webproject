@@ -1,0 +1,107 @@
+.reservation {
+    background: url('../reservation/assets/Rectangle 26.svg') center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.reservation::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.reservation-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+}
+
+.reservation-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.reservation-content h1 span {
+    color: #fff;
+}
+
+.reservation-content p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.reservation-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservation-form input,
+.reservation-form select {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.reservation-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.reservation-form select {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.reserve-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background: orange;
+    color: black;
+}
+
+.reserve-location {
+    display: flex;
+    justify-content: space-around;
+    background: #111;
+    color: white;
+    padding: 40px 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.location {
+    text-align: center;
+    max-width: 250px;
+}
+
+.location a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid orange;
+}
+
+.location a:hover {
+    color: orange;
+}

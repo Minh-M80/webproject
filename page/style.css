@@ -1,40 +1,53 @@
 .page {
     background: url('../page/assets/Rectangle 27.svg') no-repeat center center/cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     text-align: center;
 }
-  
-.page-content {
-    max-width: 600px;
-    height: 100%;
+
+.page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
 }
-  
+
+.page-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+}
+
 .page h1 {
     color: white;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
-    margin-top: 10%;
+    margin-bottom: 20px;
 }
-  
+
 .page p {
-    margin: 20px 0;
-    font-size: 14px;
+    font-size: 16px;
     color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
-  
+
 .subscribe-form {
-    margin: 20px 0;
+    margin-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid white;
-    padding: 10px;
-    margin-bottom: 15%;
+    padding: 5px 0;
+    margin-bottom: 40px;
+    gap: 10px;
 }
-  
+
 .subscribe-form input {
     background: transparent;
     border: none;
@@ -42,42 +55,18 @@
     color: white;
     font-size: 16px;
     width: 100%;
+    padding: 10px 0;
 }
-  
+
 .subscribe-form button {
     background: none;
     border: none;
     color: white;
     font-size: 20px;
     cursor: pointer;
+    padding-left: 10px;
 }
-  
-.countdown {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-}
-  
-.countdown div {
-    text-align: center;
-}
-  
-.countdown span {
-    font-size: 40px;
-    color: orange;
-    font-weight: bold;
-    font-style: italic;
-}
-  
-.go-home {
-    margin-top: 20px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-bottom: 2px solid orange;
-}
+
 
 .countdown {
     display: grid;
@@ -85,25 +74,44 @@
     gap: 20px;
     justify-items: center;
     margin-top: 30px;
-    color: orange;
-    font-size: 2rem;
+    margin-bottom: 40px;
+    font-size: 32px;
     text-align: center;
+    color: orange;
 }
-  
+
 .countdown div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
-@media (min-width: 768px) {
-  .subscribe-form input {
-    width: 70%;
-  }
 
-  .countdown {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    font-size: 2.5rem;
-  }
+.countdown span {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: orange;
+}
+
+
+.go-home {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 2px solid orange;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .subscribe-form input {
+        width: 70%;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        font-size: 40px;
+    }
 }
