@@ -71,7 +71,7 @@
 }
 .block2,.block3,.block4 {
     width: 80%;
-    margin: 5% auto;
+    margin: 8% auto;
     height: 17%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -99,6 +99,7 @@
     font-size: 40px;
 }
 .context--by{
+    margin-top: 3%;
     height: 10%;
     font-size: 16px;
     opacity: 0.8;
