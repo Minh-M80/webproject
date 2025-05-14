@@ -103,10 +103,6 @@
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
 .on, .dot:hover {
     background-color: #717171;
 }
@@ -169,6 +165,9 @@
         display: none;
     }
     .menu1--context__mini{
-        display: grid;
+        display: block;
+    }
+    .slide1{
+        display: block;
     }
 }
