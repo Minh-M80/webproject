@@ -158,6 +158,7 @@
     width: 100%;
     margin-top: 20px;
     background-image: url("assets/introduceaboutrestaurant.svg");
+    backdrop-filter: blur(5px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,37 +170,37 @@
     justify-content: center;
     align-items: center;
 }
-  
+
 .newsletter .item-title,
 .newsletter .item-input {
     padding-left: 12%;
 }
-  .newsletter .item-title h3{
-      font-size: 40px;
-      margin-top: 0;
-      margin-bottom: 0;
+.newsletter .item-title h3{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .newsletter .item-input {
     position: relative;
     width: 80%;
 }
-  
+
 .newsletter .item-input input {
     width: 100%;
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid gray;
     padding: 15px 8px 15px 0;
-    color: #fff;
+    color: white;
     font-size: 16px;
 }
-  
+
 .newsletter .item-input input::placeholder {
     color: #ccc;
     opacity: 0.6;
 }
-  
+
 .newsletter .item-input i {
     position: absolute;
     right: 0;
@@ -216,6 +217,18 @@
 .newsletter .item-input i:active{
     color: white;
 }
+@media screen and (max-width:1024px) {
+    .context--name{
+        font-size: 25px;
+    }
+    .block1--name{
+        font-size: 25px;
+        overflow: unset;
+    }
+    .block1--info{
+        font-size: 13px;
+    }
+}
 @media screen and (max-width:768px) {
 .block1,.block2,.block3,.block4{
     margin-top: 10%;
@@ -231,12 +244,6 @@
 .block--img{
     margin-top: 0%;
     width: 100%;
-}
-.context--name{
-    margin-top: 3%;
-    width: 100%;
-    height: 20%;
-    font-size: 30px;
 }
 .context2{
     margin-top: 5%;
