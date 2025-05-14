@@ -20,3 +20,34 @@
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
+.about-us-page .item1 .title{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 74px;
+    margin-top: 0;
+  
+}
+.about-us-page .item1 .intro{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+@media screen and (max-width:1024px) {
+    .about-us-page .item1 .content{   
+    grid-template-columns: repeat(1,1fr);  
+}
+.about-us-page .item1 .title{
+    font-size: 48px;
+}
+.about-us-page .item1 .content:last-child{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about-us-page .item1 .content:last-child div:first-child{
+    order: 1;
+}
+.about-us-page .item1 .content:last-child div:last-child{
+    order: 0;
+}
+}
