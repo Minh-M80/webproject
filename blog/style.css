@@ -12,7 +12,6 @@
     text-align: center;
     font-weight: 500;
     font-size: 64px;
-    font-family: 'Libre Bodoni';
     line-height: 130px;
     vertical-align: middle;
     overflow: hidden;
@@ -34,7 +33,6 @@
     width: 100%;
     height: 30%;
     font-size: 40px;
-    font-family: 'Libre Bodoni';
     overflow: hidden;
 }
 .block1--info{
