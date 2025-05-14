@@ -1,0 +1,173 @@
+.container{
+    width: 100%;
+    max-width: 1920px;
+}
+.menu1{
+    margin: 3% auto;
+    width: 80%;
+}
+.menu1--title{
+    color: white;
+    text-align: center;
+}
+.menu1--title h1{
+    font-size: 64px;   
+}
+.menu1--title img{
+    margin-top: -100px;
+    margin-left: 2%;
+}
+.menu1--context{
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+    color: white;
+}
+.menu--img img{
+    width: 100%;
+    height: 100%;
+}
+.context--title{
+    font-size: 24px;
+}
+.context--info{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    opacity: 0.8;
+}
+.borderline{
+    opacity: 0.4;
+}
+.orderBtn{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    border-bottom: 1px outset orange;
+    transition: 0.15s;
+}
+.orderBtn:hover{
+    color: orange;
+}
+.orderBtn:active{
+    color: white;
+}
+.price-tag{
+    display: flex;
+    gap: 70%;
+}
+.menu1--context__mini{
+    display: none;
+    grid-template-columns: repeat(1,1fr);
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+}
+.menu1--context__mini .context--info{
+    margin-bottom: 3%;
+    /* border-bottom: 1px outset white; */
+}
+.slide{
+    display: none;
+    margin-bottom: 3%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 20px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+}
+.dot{
+    margin-top: 10%;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.on, .dot:hover {
+    background-color: #717171;
+}
+.banner{
+    width: 100%;
+    height: 532px;
+    background-image: url(assets/Rectangle26.svg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 10%;
+}
+.banner--context{
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-top: 4%;
+    background-color:rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-align: center;
+
+}
+.banner--word{
+    font-size: 64px;
+    width: 50%;
+    margin-left: 25%;
+}
+.banner--word2{
+    font-size: 24px;
+}
+.orderNowBtn{
+    padding-top: 10px;
+    padding: 1% 2%;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    transition: 0.15s;
+}
+.orderNowBtn:hover{
+    opacity: 0.9;
+}
+.orderNowBtn:active{
+    color: black;
+    opacity: 1;
+}
+@media screen and (max-width: 1024px){
+    .banner--word{
+        font-size: 48px;
+    }
+    .banner--word2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu1--context{
+        display: none;
+    }
+    .menu1--context__mini{
+        display: block;
+    }
+    .slide1{
+        display: block;
+    }
+}
