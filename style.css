@@ -198,7 +198,7 @@ footer .footer-main{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 10px;
+    gap: 2%;
 }
 footer .footer-main .main-item a{
   display: block;
@@ -242,4 +242,44 @@ footer .footer-main .follow-us a{
 footer .footer-main .legal h3{
   padding-bottom: 40px;
   font-size: 20px;
+}
+
+@media screen and (max-width:970px) {
+  footer .footer-main .main-item .img-app{
+  flex-direction: column;
+}
+footer .footer-main{
+  width: 90%;
+  
+}
+}
+@media screen and (max-width: 790px) {
+  footer .footer-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-template-areas:
+      "logo-app logo-app"
+      "useful-link contact-info"
+      "follow-us legal";
+    gap: 1rem;
+  }
+
+  .logo-app {
+    grid-area: logo-app;
+  }
+  .useful-link {
+    grid-area: useful-link;
+  }
+  .contact-info {
+    grid-area: contact-info;
+  }
+  .follow-us {
+    grid-area: follow-us;
+  }
+  .legal {
+    grid-area: legal;
+  }
+  footer .footer-main .main-item .img-app{
+  flex-direction: row;
+}
 }
