@@ -24,6 +24,7 @@
     color: white;
     gap: 5%;
     /* border-bottom: 1px outset white; */
+    height: auto;
 }
 .block1--img img{
     width: 100%;
