@@ -5,7 +5,7 @@ function navigate(page) {
     .then(response => response.text())
     .then(data => {
       contentDiv.innerHTML = data;
-
+      window.scrollTo({ top: 0, behavior: "auto" });
       //  Load CSS tương ứng
       loadCSS(`${page}/style.css`);
       loadJS(`${page}/main.js`);
