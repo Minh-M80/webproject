@@ -243,14 +243,11 @@ body {
 .most-popular-food-items .star .except {
   color: var(--white-color);
 }
-.item-order .order{
-  transition: all 0.2s ease-in-out;
+
+.item-order .order {
+  border-bottom: 2px solid var(--orange-color) ;
   padding-bottom: 5px;
    font-size: 18px;
-}
-.item-order .order:hover {
-  border-bottom: 2px solid var(--orange-color) ;
-  font-size: 22px;
 }
 
 @media screen and (max-width: 1024px) {
