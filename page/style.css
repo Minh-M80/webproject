@@ -5,6 +5,7 @@
     align-items: center;
     position: relative;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .page::before {
