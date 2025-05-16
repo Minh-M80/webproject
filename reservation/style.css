@@ -58,7 +58,7 @@
 }
 
 .reservation-form select {
-    color: black !important;
+    color: aqua !important;
 }
 
 .reservation-form input::placeholder {
