@@ -7,7 +7,9 @@ body {
   background-color: rgba(17, 17, 20, 1) !important;
   box-sizing: border-box;
 }
-
+#status{
+  font-size: 20px;
+}
 header {
   padding: 15px;
   background: #111114;
