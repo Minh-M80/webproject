@@ -1,1 +1,135 @@
-<h1 style="color: white;">Hello</h1>
+<div class="cart-container">
+
+    <!-- Mobile-friendly card layout -->
+    <div class="cart-items-mobile">
+        <div class="cart-item-card">
+            <div class="top-row">
+                <img src="cart/assets/Rectangle 46.svg" alt="Crispy Chicken" />
+                <span class="trash"><i class="fa-solid fa-trash"></i></span>
+            </div>
+            <p><strong>Food:</strong> Crispy chicken breasts</p>
+            <p><strong>Price:</strong> $24.99</p>
+            <p><strong>Quantity:</strong>
+                <div class="quantity-control">
+                    <button class="quantity-btn minus">−</button>
+                    <input type="text" value="1">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </p>
+            <p><strong>Subtotal:</strong> $24.99</p>
+        </div>
+        <div class="cart-item-card">
+            <div class="top-row">
+                <img src="cart/assets/Rectangle 46 (1).svg" alt="Spaghetti" />
+                <span class="trash"><i class="fa-solid fa-trash"></i></span>
+            </div>
+            <p><strong>Food:</strong> Spaghetti Napoletana</p>
+            <p><strong>Price:</strong> $59.00</p>
+            <p><strong>Quantity:</strong>
+                <div class="quantity-control">
+                    <button class="quantity-btn minus">−</button>
+                    <input type="text" value="1">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </p>
+            <p><strong>Subtotal:</strong> $59.00</p>
+        </div>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-items">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Food</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="trash"><i class="fa-solid fa-trash"></i></span></td>
+                    <td class="food-item">
+                        <img src="cart/assets/Rectangle 46.svg" alt="Crispy Chicken"/>
+                        <span>Crispy chicken breasts</span>
+                    </td>
+                    <td class="price" data-price="24.99">$24.99</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">−</button>
+                            <input type="text" value="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </td>
+                    <td class="item-subtotal">$24.99</td>
+                </tr>
+                <tr>
+                    <td><span class="trash"><i class="fa-solid fa-trash"></i></span></td>
+                    <td class="food-item">
+                        <img src="cart/assets/Rectangle 46 (1).svg" alt="Spaghetti"/>
+                        <span>Spaghetti Napoletana</span>
+                    </td>
+                    <td class="price" data-price="59.00">$59.00</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">−</button>
+                            <input type="text" value="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </td>
+                    <td class="item-subtotal">$59.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <div class="cart-actions">
+        <input type="text" placeholder="Coupon code" />
+        <button class="apply-btn">Apply coupon</button>
+        <button class="update-btn">Update Cart</button>
+    </div>
+    <div class="cart-message" id="cart-message"></div>
+</div>
+
+    <!-- Cart Totals -->
+    <div class="cart-totals">
+        <h2>Cart totals</h2>
+        <table class="totals-table">
+            <tr>
+                <th>Subtotal</th>
+                <td>$83.99</td>
+            </tr>
+            <tr>
+                <th>Shipping</th>
+                <td>
+                    Flat rate: <strong>$6.00</strong><br>
+                    Shipping to <strong>New South Wales</strong>.
+                    <div class="change-address">
+                        <span>Change address <i class="fa-solid fa-truck"></i></span>
+                        <select>
+                            <option>Australia</option>
+                            <option>USA</option>
+                        <option>VietNam</option>
+                        </select>
+                        <select>
+                            <option>New South Wales</option>
+                            <option>New York</option>
+                            <option>Ho Chi Minh</option>
+                        </select>
+                        <input type="text" placeholder="Suburb" />
+                        <input type="text" placeholder="Postcode" />
+                        <button class="update-address-btn">Update</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td><strong>$89.99</strong></td>
+            </tr>
+        </table>
+
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+</div>
