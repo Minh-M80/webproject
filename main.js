@@ -6,7 +6,7 @@ function navigate(page) {
     .then(data => {
       contentDiv.innerHTML = data;
 
-      // 🔥 Load CSS tương ứng
+      //  Load CSS tương ứng
       loadCSS(`${page}/style.css`);
       loadJS(`${page}/main.js`);
       window.history.pushState({ page }, "", `#${page}`);
@@ -38,11 +38,15 @@ function navigate(page) {
 
   window.addEventListener("load", () => {
     const hash = window.location.hash.replace('#', '') || 'home';
+    console.log("load",hash)
     navigate(hash);
   });
 
   window.addEventListener("popstate", () => {
     const page = window.location.hash.replace('#', '') || 'home';
+    const page2 = window.location.hash;
+    console.log("hash",page2)
+    console.log("popstate",page)
     navigate(page);
   });
 
@@ -93,3 +97,22 @@ function navigate(page) {
   backToTopButton.onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  function updateStatus() {
+    const now = new Date();
+    const hour = now.getHours();
+
+    const statusDiv = document.getElementById("status");
+
+    if (hour >= 8 && hour < 22) {
+      statusDiv.innerText = "We're opening";
+    } else {
+      statusDiv.innerText = "We're closing";
+    }
+  }
+
+ 
+  setInterval(updateStatus, 1000);
+
+  
+  updateStatus();
