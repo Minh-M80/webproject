@@ -194,6 +194,7 @@ footer{
   width: 100%;
   color:white;
   font-family: "Plus Jakarta Sans", sans-serif !important;
+  padding-bottom: 50px;
 }
 footer .footer-main{
     width: 80%;
