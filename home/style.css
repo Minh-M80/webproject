@@ -241,11 +241,14 @@ body {
 .most-popular-food-items .star .except {
   color: var(--white-color);
 }
-
-.item-order .order {
-  font-size: 18px;
-  border-bottom: 2px solid var(--orange-color);
+.item-order .order{
+  transition: all 0.2s ease-in-out;
   padding-bottom: 5px;
+   font-size: 18px;
+}
+.item-order .order:hover {
+  border-bottom: 2px solid var(--orange-color);
+  font-size: 22px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -279,15 +282,25 @@ body {
 @media (max-width: 970px) {
   .most-popular-food-items {
     flex-direction: column;
-    align-items: center; /* căn giữa các items */
+    align-items: center; 
   }
 
   .most-popular-food-items .items {
-    width: 80%; /* hoặc 100% nếu bạn muốn full */
+    width: 80%; 
     max-width: 80%;
     flex: none; /* bỏ flex-grow/shrink/basis cũ */
+    margin-bottom: 20px; 
   }
-
+ .most-popular-food-items .items .item-text{
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 30px;
+ }
+  .most-popular-food-items .items .item-name{
+    margin-top: 30px;
+  font-size: 35px;
+  line-height: 30px;
+ }
   .item-img {
     width: 100%;
     height: auto;
@@ -321,26 +334,7 @@ body {
 
 
 
-/* Time  */
-/* .time{
-  color:var(--white-color);
-  width: 100%;
-  height: auto;
-}
-.time .time-items{
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
- 
-}
-.time .time-items .items{
- width: 50%;
- height: auto;
-}
-.time .items .find-us{
-  align-items: center;
 
-} */
 .time {
   color: var(--white-color);
   width: 100%;
@@ -651,6 +645,9 @@ border-bottom: 2px solid var(--orange-color);
   .img-restaurant {
     gap:12px;
   }
+  .visit-restaurant   .visit-restaurant-items .intro{
+    line-height: 25px;
+  }
 }
 
 @media screen and (max-width:600px){
@@ -696,132 +693,6 @@ border-bottom: 2px solid var(--orange-color);
 
 
 /* <!-- Reserve ! Book Now  --> */
-/* .reserve-book{
-  width: 100%;
-  margin-top: 80px;
-
-}
-.reserve-book .reserve-book-items{
-  width: 80%;
-  margin: 0 auto;
-  display: grid;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.reserve-book .reserve-book-items .reserve-book-text{
-  background-color: var(--orange-color);
-  width: 50%;
-  height: auto;
-  color: #111114;
-}
-.reserve-book .reserve-book-items .reserve-book-image{
-  width: 50%;
-  height: auto;
-}
-
-.reserve-book .reserve-book-items .reserve-book-image img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-.reserve-inner .set-date .time{
-  display: flex;
-  color: #111114;
-  padding: 0;
-}
-.reserve-inner .set-date .time h3{
-  font-size: 40px;
-  margin-right: 5px;
-}
-.reserve-inner .set-date .time .time-detail{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding-top: 45px;
-}
-
-.reserve-inner .set-date .time .time-detail img{
-  width: 10px;
-  height: 5px;
-  object-fit: cover;
-  display: block;
-}
-
-
-.reserve-inner {
-  display: flex;
-  justify-content: space-between;
-padding-left: 40px;
-}
-.reserve-book-text .title{
-  padding-left: 40px;
-  font-size: 45px;
-  font-family: "Libre Bodoni", serif !important;
-}
-.set-date,
-.guest {
-  flex: 1;
-}
-
-
-.guest-item {
-  display: flex;
-  color: #111114;
-}
-
-.guest-item h3 {
-  font-size: 40px;
-}
-
-.guest-detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding-top: 50px;
-  margin-left: 5px;
-  
-}
-
-.guest-detail img {
-  width: 10px;
-  height: 5px;
-  object-fit: cover;
-  display: block;
-}
-
-.set-date p,
-.guest p{
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-
-.reserve-book-items .btn{
-  padding: 0;
-  padding-left: 40px;
-  border: none;
-  outline: none;
-  
-  width: 100%;
- height: 70px;
- 
-}
-.reserve-book-items .btn button{
-  width: 70%;
-  height: 60%;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  text-align: center;
-}
- */
 
 
  .reserve-book {
@@ -1183,8 +1054,15 @@ width: 100%;
   margin-top: 7%;
 }
 .our-blog .our-blog-main .item .content .read-now .inner{
-  border-bottom: 2px solid var(--orange-color);
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 5px;
+   font-size: 18px;
 }
+.our-blog .our-blog-main .item .content .read-now .inner:hover{
+  border-bottom: 2px solid var(--orange-color);
+  font-size: 22px;
+}
+
 
 .our-blog-footer{
     display: flex;
