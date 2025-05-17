@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"); */
+
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 :root {
   --orange-color: #fb8f2c;
@@ -21,14 +21,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(2,1fr); */
   gap: 20px;
   padding: 40px;
   width: 100%;
-  /* max-width: 1440px; */
   padding-left: 4%;
-/* margin: 0 auto; */
+
 }
 
 .introduce .introduce-menu {
@@ -68,10 +65,10 @@ body {
 }
 
 .introduce .introduce-text h5 {
-  opacity: 0.8; /* trắng mờ */
+  opacity: 0.8; 
 }
 .introduce .introduce-text .evidence {
-  opacity: 0.8; /* trắng mờ */
+  opacity: 0.8; 
   line-height: 1.5;
 }
 @media (max-width: 768px) {
@@ -86,31 +83,28 @@ body {
     margin-top: 20px;
     
   }
-  /* thêm của grid  */
-  /* .introduce .introduce-text{
-    margin:0 auto
-  } */
+
   .introduce .introduce-text h1 {
-    font-size: 36px; /* giảm kích thước chữ */
+    font-size: 36px; 
   }
   .introduce .introduce-text h5 {
-    font-size: 16px; /* giảm kích thước chữ */
+    font-size: 16px; 
   }
   .introduce .introduce-text .evidence {
-    font-size: 14px; /* giảm kích thước chữ */
+    font-size: 14px; 
   }
 }
 
 .restaurant {
   margin-top: 20px;
   background-image: url("assets/introduceaboutrestaurant.svg");
-  /* background-image: url("home/assets/introduceaboutrestaurant.svg"); */
+  
   backdrop-filter: blur(5px);
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* max-width: 1440px; */
+ 
   width: 100%;
   height: 194px;
   top: 643px;
@@ -344,7 +338,7 @@ body {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  /* flex-wrap: wrap; */
+
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
@@ -364,7 +358,7 @@ body {
 /* Background ảnh bên trái */
 .time .item:first-child {
   background: url('./assets/Avenue.svg') ;
-  /* background: url('../home/assets/Avenue.svg') ; */
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -407,10 +401,10 @@ body {
   }
   .time .item:first-child {
     background-size: cover;
-    height: 200px; /* Thay đổi chiều cao cho ảnh bên trái */
+    height: 200px;
   }
   .time .orange-bg {
-    padding: 20px; /* Thay đổi padding cho màu nền cam bên phải */
+    padding: 20px;
   }
   
 }
@@ -554,7 +548,7 @@ border-bottom: 2px solid var(--orange-color);
     grid-template-columns: repeat(1, 1fr);
   }
   .our-menu-items .our-menu-item-two .menu-item{
-    /* margin-bottom: 20px; */
+    
     margin-top: 10px;
   }
   .our-menu-items .our-menu-item-two .menu-item img {
@@ -562,7 +556,7 @@ border-bottom: 2px solid var(--orange-color);
   }
   .our-menu-items .our-menu-item-two .menu-item-text p {
     font-size: 18px;
-    /* line-height: 30px; */
+   
   }
   
 }
@@ -846,95 +840,6 @@ border-bottom: 2px solid var(--orange-color);
 
 
 
-
-
-
-
-
-
-
-
-/* Our daily  */
-/* Our Daily Offers */
-/* .our-daily{
-  color: var(--white-color);
-  width: 100%;
-  margin-top: 80px;
-}
-
-.our-daily .our-daily-items{
-  width: 80%;
-  margin: 0 auto;
-  
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.our-daily-text{
-  text-align: center;
-  margin-bottom: 20px;
-}
-.our-daily-offers{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:15px;
-  align-items: stretch;
-}
-.our-daily-offers .item1{
-  position: relative;
-  height: 100%;
-  min-height: 100%;
-}
-.our-daily-offers .item1-text{
-  position: absolute;
-  top: 5%;
-  left: 5%;
-}
-.item1-text-inner{
-  border:1px solid var(--white-color);
-  padding: 10px 90px 10px 0px;
-}
-.our-daily-offers .item2{
-  
-  height: 100%;
-}
-.our-daily-offers .item2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  
-padding: 0 !important;
-  border-radius: 8px;
-  height: 100%;
-}
-.our-daily-offers .item2 .name{
-  display: flex;
-  justify-content: space-between;
-}
-
-.our-daily-offers .item2 .item2-intro{
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  
-}
-.our-daily-offers .item2 .item2-intro img {
- 
- width: 100%;
- height: 100%;
-  display: block;
-  object-fit: cover;
- 
-} */
-
-
-
-
-
-
-
-
-
-
 /* They will cook for you  */
 .cook-for-you{
  width: 100%;
@@ -1050,7 +955,7 @@ width: 100%;
   font-size: 14px;
 }
 .our-blog .our-blog-main .item .content .read-now{
-  margin-top: 7%;
+  margin-top: 3%;
 }
 .our-blog .our-blog-main .item .content .read-now .inner{
   transition: all 0.2s ease-in-out;

@@ -117,10 +117,5 @@ function navigate(page) {
     statusDiv.innerText = "We're closing";
   }
 }
-
-
- 
-  setInterval(updateStatus, 1000);
-
-  
-  updateStatus();
+setInterval(updateStatus, 1000);
+updateStatus();
