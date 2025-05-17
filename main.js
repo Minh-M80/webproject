@@ -98,18 +98,26 @@ function navigate(page) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  function updateStatus() {
-    const now = new Date();
-    const hour = now.getHours();
+ function updateStatus() {
+  const now = new Date();
+  const hour = now.getHours();
+  const day = now.getDay(); 
 
-    const statusDiv = document.getElementById("status");
+  const statusDiv = document.getElementById("status");
 
-    if (hour >= 8 && hour < 22) {
-      statusDiv.innerText = "We're opening";
-    } else {
-      statusDiv.innerText = "We're closing";
-    }
+ 
+  if ((day === 0 || day === 6) && hour >= 7 && hour < 24) {
+    statusDiv.innerText = "We're opening";
+  } 
+  
+  else if (day >= 1 && day <= 5 && hour >= 7 && hour < 22) {
+    statusDiv.innerText = "We're opening";
+  } 
+  else {
+    statusDiv.innerText = "We're closing";
   }
+}
+
 
  
   setInterval(updateStatus, 1000);
