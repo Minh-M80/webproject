@@ -13,9 +13,9 @@ function showMessage(text, type) {
 }
 
 applyBtn.addEventListener('click', () => {
-    showMessage('Mã không hợp lệ', 'error');
+    showMessage('Invalid coupon', 'error');
 });
 
 updateBtn.addEventListener('click', () => {
-    showMessage('Thêm thành công', 'success');
+    showMessage('Update successfully', 'success');
 });
