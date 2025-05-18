@@ -55,7 +55,7 @@ header {
   border-bottom: 2px solid white;
 }
 
-/* Hamburger icon */
+/*  icon */
 .menu-icon {
   display: none;
   font-size: 26px;
@@ -72,17 +72,17 @@ header {
   display: none;
 }
 
-/* Hidden checkbox */
+/*  checkbox */
 #menu-toggle {
   display: none;
 }
 
-/* Overlay when menu is open */
+/* Overlay  */
 .overlay {
   display: none;
 }
 
-/* ============ Responsive ============ */
+
 @media (max-width: 768px) {
   .menu {
     justify-content: center;
@@ -103,7 +103,7 @@ header {
     right: 20px;
   }
 
-  /* Show sidebar when toggled */
+  /* bật toggled */
   #menu-toggle:checked ~ .overlay {
     display: block;
     position: fixed;
@@ -154,7 +154,7 @@ header {
 
 
 #backToTop {
-  display: none; /* Ẩn ban đầu */
+  display: none; 
   position: fixed;
   bottom: 80px;
   right: 40px;
@@ -175,7 +175,7 @@ header {
 
 
 #backToTop:hover {
-  background-color: #e67a1c; /* Màu cam đậm hơn */
+  background-color: #e67a1c; 
   box-shadow: 0 6px 14px rgba(251, 143, 44, 0.4);
   transform: translateY(-2px);
 }
