@@ -928,7 +928,7 @@ width: 100%;
   
   gap:30px;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .our-blog-main .item .img img{
@@ -963,10 +963,12 @@ width: 100%;
   transition: all 0.2s ease-in-out;
   padding-bottom: 5px;
    font-size: 18px;
+   
 }
 .our-blog .our-blog-main .item .content .read-now .inner:hover{
   border-bottom: 2px solid var(--orange-color);
-  font-size: 22px;
+  font-size: 20px;
+  
 }
 
 
@@ -999,6 +1001,7 @@ width: 100%;
 .our-blog-main .item:last-child .content{
   order: 1;
 }
+
 }
 
 
