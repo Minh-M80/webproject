@@ -40,14 +40,14 @@ body {
   cursor: pointer;
 }
 .introduce-text {
-  flex-shrink: 1;
+  
   min-width: 300px;
  
   
 }
 
 .introduce-image {
-  flex-shrink: 1;
+  
 
   min-width: 280px;
   max-width: 100%;
@@ -75,8 +75,6 @@ body {
 @media (max-width: 768px) {
   .introduce {
     flex-direction: column;
-    grid-template-columns: 1fr;
-    align-items: center;
     margin-left: 0;
     padding: 20px;
   }
@@ -99,9 +97,6 @@ body {
 .restaurant {
   margin-top: 20px;
   background-image: url("assets/introduceaboutrestaurant.svg");
-  
-  backdrop-filter: blur(5px);
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
